@@ -1,0 +1,125 @@
+
+/********************* FONTS STYLE ***********************/
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.font-family-bold{
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.font-family-light{
+  font-family: "OpenSans-Light", sans-serif;
+}
+
+.font-family-regular{
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.font-family-semi-bold{
+  font-family: "OpenSans-SemiBold", sans-serif;
+}
+
+/**************** COLORS STYLE **************/
+
+$color-bg: #F1F1F1;
+$color-icon: #898989;
+$color-purple: #5a077D;
+$color-green: #07CA54;
+$color-purple-2: #9C6AB1;
+
+/****************** ICONS STYLE ***************/
+
+.icon{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: sub;
+
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+
+  background-color: $color-icon;
+
+  &.icon-heart{
+    mask-image: url("../icons/heart.svg");
+    -webkit-mask-image: url("../icons/heart.svg");
+  }
+  &.icon-search{
+    mask-image: url("../icons/search.svg");
+    -webkit-mask-image: url("../icons/search.svg");
+  }
+  &.icon-basket{
+    mask-image: url("../icons/shopping-cart.svg");
+    -webkit-mask-image: url("../icons/shopping-cart.svg");
+  }
+  &.icon-view{
+    mask-image: url("../icons/eye.svg");
+    -webkit-mask-image: url("../icons/eye.svg");
+  }
+  &.icon-download{
+    mask-image: url("../icons/download.svg");
+    -webkit-mask-image: url("../icons/download.svg");
+  }
+  &.icon-mail{
+    mask-image: url("../icons/mail.svg");
+    -webkit-mask-image: url("../icons/mail.svg");
+  }
+  &.icon-phone{
+    mask-image: url("../icons/phone.svg");
+    -webkit-mask-image: url("../icons/phone.svg");
+  }
+  &.icon-location{
+    mask-image: url("../icons/map-pin.svg");
+    -webkit-mask-image: url("../icons/map-pin.svg");
+  }
+  &.icon-purple{
+    background-color: $color-purple;
+  }
+  &.icon-green{
+    background-color: $color-green;
+  }
+
+}
+
+
+/****************** MAIN STYLES *****************/
+
+body{
+  background-color: $color-bg;
+
+  .navbar{
+    .navbar-brand{
+      p{
+        font-size: 11px;
+      }
+    }
+    .input-group{
+      width: 370px;
+      margin-left: 80px;
+      input, button{
+        background-color: $color-bg;
+      }
+    }
+  }
+}
